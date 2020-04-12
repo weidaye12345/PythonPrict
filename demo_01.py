@@ -55,18 +55,25 @@ print(len(a))"""
 # print(c[0][2])
 # print(c[-4:-1 ])
 # 切片为取值为左闭右开  闭为取值,右为不取
-key1="姓名"
+
 name=input("请输入您的姓名:")
-key2="年龄"
+
 age=input("请输入您的年龄:")
-key3="性别"
+
 sex=input("请输入您的性别:")
 dict1= {}
-dict1[key1]=name
-dict1[key2]=age
-dict1[key3]=sex
+# dict1.update(姓名=name,年龄=age,性别=sex)
+dict1["name"]=name
+dict1["age"]=age
+dict1["sex"]=sex
+print(dict1.keys())
+print(dict1.items())
+del dict1['name']
 print(dict1)
-rea=dict1.pop("年龄")
-print(dict1)
+# dict1.clear()
+# print(dict1)
+d=dict1.pop('age')
+print(dict1,d)
 
 
+ 
